@@ -1,0 +1,14 @@
+*
+!/.vscode
+!/LICENSE
+!/README.md
+!.gitignore
+
+!aai-industry-burner-begone
+!aai-industry-burner-begone/**
+
+!aai-industry-wall-reskin
+!aai-industry-wall-reskin/**
+
+!no-aai-iron-pole-2
+!no-aai-iron-pole-2/**
