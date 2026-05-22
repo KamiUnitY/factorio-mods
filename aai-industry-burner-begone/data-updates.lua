@@ -1,4 +1,4 @@
-local util = require("data-util")
+local util = require("libraries/utility")
 local aai_util = require("__aai-industry__/data-util")
 
 aai_util.enable_recipe("iron-stick")
