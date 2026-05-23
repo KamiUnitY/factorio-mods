@@ -78,6 +78,13 @@ data.raw.technology["glass-processing"].unit = {
 data.raw.technology["electronics"].order = "a"
 data.raw.technology["automation-science-pack"].order = "b"
 
+if settings.startup["aai-bb-cheaper-electric-motor"].value then
+    data.raw.recipe["electric-motor"].ingredients = {
+        {type = "item", name = "iron-gear-wheel", amount = 1},
+        {type = "item", name = "copper-cable", amount = 4},
+    }
+end
+
 data.raw.recipe["inserter"].ingredients = {
     {type="item", name="iron-stick", amount=2},
     {type="item", name="electric-motor", amount=1},

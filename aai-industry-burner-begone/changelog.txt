@@ -3,6 +3,7 @@ Version: 1.0.1
 Date: 2026-05-23
   Changes:
     - Moved data phase for more compatibility
+    - Added a mod settings for making electric motor recipe cheaper
 
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
