@@ -98,14 +98,14 @@ data.raw.recipe["lab"].ingredients = {
 }
 
 data.raw.recipe["assembling-machine-1"].ingredients = {
-    {type = "item", name = "iron-gear-wheel", amount = 8},
-    {type = "item", name = "electric-motor", amount = 2},
+    {type = "item", name = "iron-gear-wheel", amount = 9},
+    {type = "item", name = "electric-motor", amount = 3},
     {type = "item", name = "stone-brick", amount = 4},
 }
 
 data.raw.recipe["electric-mining-drill"].ingredients = {
-    {type = "item", name = "iron-gear-wheel", amount = 5},
-    {type = "item", name = "electric-motor", amount = 5},
+    {type = "item", name = "iron-gear-wheel", amount = 6},
+    {type = "item", name = "electric-motor", amount = 6},
     {type = "item", name = "stone-brick", amount = 4},
 }
 

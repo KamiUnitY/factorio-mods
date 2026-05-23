@@ -1,9 +1,12 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 2026-05-23
-  Changes:
-    - Moved data phase for more compatibility
+  Features:
     - Added a mod settings for making electric motor recipe cheaper
+  Changes:
+    - Adjusted cost for electric drill and assembling machine to compensate cheaper motor
+  Compatibility:
+    - Moved data phase for more compatibility
 
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
