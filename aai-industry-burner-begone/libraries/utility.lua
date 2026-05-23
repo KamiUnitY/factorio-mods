@@ -49,4 +49,24 @@ function util.recipe_remove(recipe_name)
     data.raw.item[recipe_name].order = nil
 end
 
+function util.recipe_set_ingredient_amount(recipe_name, ingredients)
+	local recipe = data.raw.recipe[recipe_name]
+	if not recipe then return end
+
+	for _, ingredient in pairs(ingredients) do
+		local found = false
+		for _, existing_ingredient in pairs(recipe.ingredients) do
+			if existing_ingredient.name == ingredient.name and existing_ingredient.type == ingredient.type then
+				existing_ingredient.amount = ingredient.amount
+				found = true
+				break
+			end
+		end
+
+		if not found then
+			table.insert(recipe.ingredients, {type = ingredient.type, name = ingredient.name, amount = ingredient.amount})
+		end
+	end
+end
+
 return util

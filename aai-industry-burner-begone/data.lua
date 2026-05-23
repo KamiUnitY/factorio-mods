@@ -1,3 +1,5 @@
+local util = require("libraries/utility")
+
 data.raw.technology["burner-mechanics"].prerequisites = {}
 data.raw.technology["burner-mechanics"].research_trigger = {
     type = "craft-item",
@@ -102,6 +104,11 @@ data.raw.recipe["assembling-machine-1"].ingredients = {
     {type = "item", name = "electric-motor", amount = 3},
     {type = "item", name = "stone-brick", amount = 4},
 }
+
+util.recipe_set_ingredient_amount("assembling-machine-2", {
+    {type = "item", name = "electric-motor", amount = 3},
+    {type = "item", name = "electronic-circuit", amount = 5},
+})
 
 data.raw.recipe["electric-mining-drill"].ingredients = {
     {type = "item", name = "iron-gear-wheel", amount = 6},
