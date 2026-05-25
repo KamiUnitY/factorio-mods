@@ -69,4 +69,21 @@ function util.recipe_set_ingredient_amount(recipe_name, ingredients)
 	end
 end
 
+function util.recipe_clear_ingredients(recipe_name, ingredients)
+	local recipe = data.raw.recipe[recipe_name]
+	if not recipe then return end
+
+	local ingredients_to_remove = {}
+	for _, ingredient in pairs(ingredients) do
+		ingredients_to_remove[ingredient.type .. ":" .. ingredient.name] = true
+	end
+
+	for i = #recipe.ingredients, 1, -1 do
+		local existing_ingredient = recipe.ingredients[i]
+		if ingredients_to_remove[existing_ingredient.type .. ":" .. existing_ingredient.name] then
+			table.remove(recipe.ingredients, i)
+		end
+	end
+end
+
 return util
