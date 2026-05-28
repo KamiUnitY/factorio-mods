@@ -1,6 +1,6 @@
 {
 	"name": "aai-industry-burner-begone",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"title": "AAI Industry: Burner Begone",
 	"author": "KamiUnitY",
 	"description": "Removes the burner phase and burner upgrade requirements from AAI Industry.",
@@ -8,6 +8,7 @@
 	"dependencies": [
 		"base >= 2.0.0",
 		"aai-industry",
+		"(?) crushing-industry",
 		"(?) Krastorio2",
 		"(?) Krastorio2-spaced-out"
 	]

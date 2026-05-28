@@ -3,3 +3,4 @@ data.raw.recipe["logistic-science-pack"].category = "crafting"
 
 require("compatibility.Krastorio2")
 require("compatibility.Krastorio2-spaced-out")
+require("compatibility.crushing-industry")
