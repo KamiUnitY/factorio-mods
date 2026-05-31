@@ -4,6 +4,9 @@
 !/README.md
 !.gitignore
 
+!aai-industry-kamy-tweaks
+!aai-industry-kamy-tweaks/**
+
 !aai-industry-burner-begone
 !aai-industry-burner-begone/**
 

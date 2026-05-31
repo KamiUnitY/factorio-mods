@@ -1,0 +1,15 @@
+{
+	"name": "aai-industry-kamy-tweaks",
+	"version": "1.0.0",
+	"title": "AAI Industry: Kamy Tweaks",
+	"author": "KamiUnitY",
+	"description": "Some tweaks for AAI Industry.",
+	"factorio_version": "2.0",
+	"dependencies": [
+		"base >= 2.0.0",
+		"aai-industry",
+		"(?) crushing-industry",
+		"(?) Krastorio2",
+		"(?) Krastorio2-spaced-out"
+	]
+}

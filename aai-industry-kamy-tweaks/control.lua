@@ -1,11 +1,11 @@
 local FREEPLAY_ITEMS_SHIP = {
-  ["iron-chest"] = 1,
+  ["burner-assembling-machine"] = 1,
   ["burner-inserter"] = 2,
   ["burner-mining-drill"] = 3,
 }
 local FREEPLAY_ITEMS_DEBRIS = {
   ["iron-plate"] = 24,
-  ["copper-cable"] = 8,
+  ["iron-gear-wheel"] = 8,
 }
 
 local function add_items_to_freeplay(storage, items_map)
@@ -23,11 +23,13 @@ end
 local function init_freeplay_items()
   if not remote.interfaces["freeplay"] then return end
 
-  remove_all_items_from_freeplay("ship")
-  remove_all_items_from_freeplay("debris")
+  if settings.startup["aai-kamy-reduced-starter-items"].value then
+    remove_all_items_from_freeplay("ship")
+    remove_all_items_from_freeplay("debris")
 
-  add_items_to_freeplay("ship", FREEPLAY_ITEMS_SHIP)
-  add_items_to_freeplay("debris", FREEPLAY_ITEMS_DEBRIS)
+    add_items_to_freeplay("ship", FREEPLAY_ITEMS_SHIP)
+    add_items_to_freeplay("debris", FREEPLAY_ITEMS_DEBRIS)
+  end
 end
 
 script.on_init(init_freeplay_items)

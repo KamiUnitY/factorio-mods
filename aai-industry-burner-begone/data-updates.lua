@@ -1,7 +1,6 @@
 local util = require("libraries/utility")
 local aai_util = require("__aai-industry__/data-util")
 
-aai_util.enable_recipe("iron-stick")
 aai_util.enable_recipe("copper-cable")
 
 util.recipe_remove("burner-lab")
@@ -11,11 +10,6 @@ data:extend({{type = "recipe-category", name = "none"}})
 data.raw["assembling-machine"]["burner-assembling-machine"].crafting_categories = {"none"}
 
 util.technology_remove("basic-logistics")
-aai_util.tech_lock_recipes("burner-mechanics", {
-    "transport-belt",
-    "burner-inserter",
-    "burner-mining-drill",
-})
 
 util.technology_remove("electric-lab")
 aai_util.tech_lock_recipes("electronics", {
@@ -55,49 +49,13 @@ data.raw.technology["automation-science-pack"].research_trigger = {
 data.raw.technology["automation-science-pack"].unit = nil
 
 data.raw.technology["automation"].prerequisites = {"automation-science-pack"}
-data.raw.technology["automation"].unit = {
+util.table.patch(data.raw.technology["automation"].unit, {
     count = 10,
-    ingredients = {
-        {"automation-science-pack", 1},
-    },
-    time = 10
-}
+    time = 10,
+})
 
 data.raw.technology["logistic-science-pack"].prerequisites = {"automation-science-pack"}
 data.raw.technology["basic-fluid-handling"].prerequisites = {"automation-science-pack"}
-
-data.raw.technology["basic-fluid-handling"].unit = {
-    count = 20,
-    ingredients = {
-        {"automation-science-pack", 1},
-    },
-    time = 10
-}
-
-data.raw.technology["steam-power"].prerequisites = {"basic-fluid-handling"}
-data.raw.technology["steam-power"].unit = {
-    count = 30,
-    ingredients = {
-        {"automation-science-pack", 1},
-    },
-    time = 15
-}
-
-data.raw.technology["sand-processing"].unit = {
-    count = 10,
-    ingredients = {
-        {"automation-science-pack", 1},
-    },
-    time = 5
-}
-
-data.raw.technology["glass-processing"].unit = {
-    count = 20,
-    ingredients = {
-        {"automation-science-pack", 1},
-    },
-    time = 5
-}
 
 data.raw.technology["electronics"].order = "a"
 data.raw.technology["automation-science-pack"].order = "b"
