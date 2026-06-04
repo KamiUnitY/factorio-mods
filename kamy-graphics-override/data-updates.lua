@@ -3,6 +3,8 @@ if mods["aai-industry"] then
     data.raw["assembling-machine"]["burner-assembling-machine"].icon = "__kamy-graphics-override__/graphics/icons/burner-assembling-machine.png"
 
     data.raw.technology["basic-fluid-handling"].icon = "__kamy-graphics-override__/graphics/technology/basic-fluid-handling.png"
+    
+    data.raw.technology["glass-processing"].icon = "__kamy-graphics-override__/graphics/technology/glass-processing.png"
 end
 
 if mods["crushing-industry"] then
