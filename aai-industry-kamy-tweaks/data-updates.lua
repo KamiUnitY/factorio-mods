@@ -3,11 +3,7 @@ local aai_util = require("__aai-industry__/data-util")
 
 aai_util.enable_recipe("iron-stick")
 
-data.raw.item["burner-assembling-machine"].icon = "__aai-industry-kamy-tweaks__/graphics/icons/burner-assembling-machine.png"
-data.raw["assembling-machine"]["burner-assembling-machine"].icon = "__aai-industry-kamy-tweaks__/graphics/icons/burner-assembling-machine.png"
 data.raw["assembling-machine"]["burner-assembling-machine"].crafting_categories = data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories
-
-data.raw.technology["basic-fluid-handling"].icon = "__aai-industry-kamy-tweaks__/graphics/technology/basic-fluid-handling.png"
 
 util.technology_remove("basic-logistics")
 aai_util.tech_lock_recipes("burner-mechanics", {

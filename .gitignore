@@ -4,6 +4,9 @@
 !/README.md
 !.gitignore
 
+!kamy-graphics-override
+!kamy-graphics-override/**
+
 !aai-industry-kamy-tweaks
 !aai-industry-kamy-tweaks/**
 
