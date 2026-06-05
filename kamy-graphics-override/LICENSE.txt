@@ -1,0 +1,30 @@
+LICENSE NOTICE
+
+This software and its accompanying assets are distributed under multiple license agreements.
+By using, modifying, or distributing this software, you agree to abide by the terms and conditions outlined below.
+
+1. MIT License
+
+Scripts contained within this software are licensed under the MIT License
+
+See: "license-mit-kamiunity.txt"
+
+The assets listed below are excluded from MIT License and distributed under different license terms.
+
+2. Creative Commons Attribution 4.0 International License
+
+The following files are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0):
+
+- "graphics\technology\ore-crushing.png", By malcolmriley, Modified with AI by KamiUnitY
+- "graphics\technology\glass-processing.png", By malcolmriley, Background clean by KamiUnitY
+
+See: "license-cc-by-4.0.txt"
+
+3. Factorio End User License Agreement
+
+The following files are licensed under the Factorio End User License Agreement:
+
+- "graphics\technology\basic-fluid-handling.png", By Wube Software, Modified with AI by KamiUnitY
+- "graphics\icons\burner-assembling-machine.png", By Wube Software, Modified by KamiUnitY
+
+See: "license-factorio-eula.txt"
