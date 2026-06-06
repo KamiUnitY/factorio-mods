@@ -3,12 +3,24 @@ if mods["aai-industry"] then
     data.raw["assembling-machine"]["burner-assembling-machine"].icon = "__kamy-graphics-override__/graphics/icons/burner-assembling-machine.png"
 
     data.raw.technology["basic-fluid-handling"].icon = "__kamy-graphics-override__/graphics/technology/basic-fluid-handling.png"
-    
+
     data.raw.technology["glass-processing"].icon = "__kamy-graphics-override__/graphics/technology/glass-processing.png"
 end
 
 if mods["crushing-industry"] then
     data.raw.technology["ore-crushing"].icon = "__kamy-graphics-override__/graphics/technology/ore-crushing.png"
+
+    data.raw.item["burner-crusher"].icon = "__kamy-graphics-override__/graphics/icons/burner-crusher.png"
+    data.raw.item["electric-crusher"].icon = "__kamy-graphics-override__/graphics/icons/electric-crusher.png"
+    data.raw.item["big-crusher"].icon = "__kamy-graphics-override__/graphics/icons/big-crusher.png"
+
+    data.raw["furnace"]["burner-crusher"].icon = "__kamy-graphics-override__/graphics/icons/burner-crusher.png"
+    data.raw["furnace"]["electric-crusher"].icon = "__kamy-graphics-override__/graphics/icons/electric-crusher.png"
+    data.raw["assembling-machine"]["big-crusher"].icon = "__kamy-graphics-override__/graphics/icons/big-crusher.png"
+
+    data.raw["furnace"]["burner-crusher"].graphics_set.animation.layers[1].filename = "__kamy-graphics-override__/graphics/entity/burner-crusher/burner-crusher-base.png"
+    data.raw["furnace"]["electric-crusher"].graphics_set.animation.layers[1].filename = "__kamy-graphics-override__/graphics/entity/electric-crusher/electric-crusher-base.png"
+    data.raw["assembling-machine"]["big-crusher"].graphics_set.animation.layers[2].filename = "__kamy-graphics-override__/graphics/entity/big-crusher/big-crusher-base.png"
 end
 
 if mods["crushing-industry-productivity-research"] then

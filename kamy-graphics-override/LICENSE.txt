@@ -20,11 +20,24 @@ The following files are licensed under the Creative Commons Attribution 4.0 Inte
 
 See: "license-cc-by-4.0.txt"
 
-3. Factorio End User License Agreement
+3. GNU Lesser General Public License version 3
+
+The following files are licensed under the GNU Lesser General Public License version 3 (GNU LGPLv3):
+
+- "graphics\icons\burner-crusher.png", By SafTheLamb, Modified by KamiUnitY
+- "graphics\icons\electric-crusher.png", By SafTheLamb, Modified by KamiUnitY
+- "graphics\icons\big-crusher.png", By SafTheLamb, Modified by KamiUnitY
+- "graphics\entity\burner-crusher", By SafTheLamb, Modified by KamiUnitY
+- "graphics\entity\electric-crusher", By SafTheLamb, Modified by KamiUnitY
+- "graphics\entity\big-crusher", By SafTheLamb, Modified by KamiUnitY
+
+See: "license-gnu-lgpl-3.0.txt"
+
+4. Factorio End User License Agreement
 
 The following files are licensed under the Factorio End User License Agreement:
 
-- "graphics\technology\basic-fluid-handling.png", By Wube Software, Modified with AI by KamiUnitY
+- "graphics\technology\basic-fluid-handling.png", By Wube Software, Modified by KamiUnitY
 - "graphics\icons\burner-assembling-machine.png", By Wube Software, Modified by KamiUnitY
 
 See: "license-factorio-eula.txt"
