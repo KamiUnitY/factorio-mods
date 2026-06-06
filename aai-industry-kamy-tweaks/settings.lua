@@ -8,9 +8,16 @@ data:extend({
     },
     {
         type = "bool-setting",
-        name = "aai-kamy-reduced-starter-items",
+        name = "aai-kamy-early-steam-power",
         setting_type = "startup",
         default_value = true,
         order = "b",
+    },
+    {
+        type = "bool-setting",
+        name = "aai-kamy-reduced-starter-items",
+        setting_type = "startup",
+        default_value = true,
+        order = "c",
     },
 })

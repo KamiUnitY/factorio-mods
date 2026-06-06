@@ -32,14 +32,16 @@ util.table.patch(data.raw.technology["glass-processing"].unit, {
     time = 10
 })
 
-data.raw.technology["steam-power"].prerequisites = {"basic-fluid-handling"}
-util.table.patch(data.raw.technology["steam-power"].unit, {
-    count = 75,
-    time = 15
-})
-util.technology_remove_ingredients("steam-power", {
-    "logistic-science-pack",
-})
+if settings.startup["aai-kamy-early-steam-power"].value then
+    data.raw.technology["steam-power"].prerequisites = {"basic-fluid-handling"}
+    util.table.patch(data.raw.technology["steam-power"].unit, {
+        count = 75,
+        time = 15,
+        ingredients ={
+            {"automation-science-pack", 1},
+        },
+    })
+end
 
 data.raw.technology["automation"].order = "b"
 data.raw.technology["electric-lab"].order = "b"
