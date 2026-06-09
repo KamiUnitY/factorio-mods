@@ -1,11 +1,5 @@
 local util = require("libraries/utility")
 
-data.raw.recipe["assembling-machine-1"].ingredients = {
-    {type = "item", name = "iron-gear-wheel", amount = 8},
-    {type = "item", name = "electric-motor", amount = 2},
-    {type = "item", name = "stone-brick", amount = 4},
-}
-
 data.raw.recipe["lab"].ingredients = {
     {type="item", name="electronic-circuit", amount=10},
     {type="item", name="electric-motor", amount=5},
