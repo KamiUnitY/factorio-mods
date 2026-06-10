@@ -108,4 +108,17 @@ function util.recipe_clear_ingredients(recipe_name, ingredients)
 	end
 end
 
+function util.recipe_replace_ingredient(recipe_name, from_ingredient, to_ingredient)
+    local recipe = data.raw.recipe[recipe_name]
+    if not recipe or not recipe.ingredients then return end
+
+    for _, ingredient in pairs(recipe.ingredients) do
+        if ingredient.name == from_ingredient then
+            if ingredient.name then
+                ingredient.name = to_ingredient
+            end
+        end
+    end
+end
+
 return util

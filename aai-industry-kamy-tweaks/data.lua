@@ -35,3 +35,8 @@ if settings.startup["aai-kamy-no-burner-upgrades"].value then
     end
     data.raw.recipe["electric-furnace"].ingredients = electric_furnace_ingredients
 end
+
+if mods["FluidMustFlow"] then
+    util.recipe_replace_ingredient("duct-intake", "engine-unit", "electric-engine-unit")
+    util.recipe_replace_ingredient("duct-exhaust", "engine-unit", "electric-engine-unit")
+end
