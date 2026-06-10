@@ -7,7 +7,7 @@ By using, modifying, or distributing this software, you agree to abide by the te
 
 Scripts contained within this software are licensed under the MIT License
 
-See: "license-mit-kamiunity.txt"
+See: "license-mit.txt"
 
 The assets listed below are excluded from MIT License and distributed under different license terms.
 
