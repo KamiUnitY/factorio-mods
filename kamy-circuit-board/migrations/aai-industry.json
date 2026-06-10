@@ -1,0 +1,14 @@
+{
+	"item": [
+		[
+			"stone-tablet",
+			"circuit-board"
+		]
+	],
+	"recipe": [
+		[
+			"stone-tablet",
+			"circuit-board-stone-brick"
+		]
+	]
+}
