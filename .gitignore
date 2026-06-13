@@ -4,8 +4,8 @@
 !/README.md
 !.gitignore
 
-!kamy-graphics-override
-!kamy-graphics-override/**
+!kamy-reskins
+!kamy-reskins/**
 
 !kamy-circuit-board
 !kamy-circuit-board/**
