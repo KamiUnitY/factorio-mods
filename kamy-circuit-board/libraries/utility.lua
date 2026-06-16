@@ -64,6 +64,11 @@ function util.recipe_remove(recipe_name)
 
     data.raw.recipe[recipe_name].enabled = false
     data.raw.recipe[recipe_name].hidden = true
+
+	if data.raw.item[recipe_name] then
+		data.raw.item[recipe_name].subgroup = nil
+		data.raw.item[recipe_name].order = nil
+	end
 end
 
 function util.recipe_set_ingredient_amount(recipe_name, ingredients)
