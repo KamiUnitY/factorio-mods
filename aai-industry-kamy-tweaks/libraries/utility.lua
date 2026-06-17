@@ -46,6 +46,58 @@ function util.technology_remove_ingredients(tech_name, ingredients_to_remove)
     end
 end
 
+function util.technology_insert_recipe_after(technology_name, recipe_name, after_recipe)
+    local effects = data.raw.technology[technology_name].effects
+
+    for i, effect in ipairs(effects) do
+        if effect.type == "unlock-recipe" and effect.recipe == after_recipe then
+            table.insert(effects, i + 1, {
+                type = "unlock-recipe",
+                recipe = recipe_name
+            })
+            return true
+        end
+    end
+
+    return false
+end
+
+function util.technology_insert_recipe_before(technology_name, recipe_name, before_recipe)
+    local effects = data.raw.technology[technology_name].effects
+
+    for i, effect in ipairs(effects) do
+        if effect.type == "unlock-recipe" and effect.recipe == before_recipe then
+            table.insert(effects, i, {
+                type = "unlock-recipe",
+                recipe = recipe_name
+            })
+			data.raw.recipe[recipe_name].hidden = false
+            return true
+        end
+    end
+
+    return false
+end
+
+function util.technology_remove_recipe_effect(recipe_name)
+	local recipe = data.raw.recipe[recipe_name]
+	if not recipe then return end
+
+	for _, tech in pairs(data.raw.technology) do
+		local effects = tech.effects
+		if effects and #effects > 0 then
+			for i = #effects, 1, -1 do
+				local effect = effects[i]
+				if effect.type == "unlock-recipe" and effect.recipe == recipe_name then
+					util.table.remove(effects, i)
+				end
+			end
+		end
+	end
+
+    data.raw.recipe[recipe_name].enabled = false
+end
+
 function util.recipe_remove(recipe_name)
 	local recipe = data.raw.recipe[recipe_name]
 	if not recipe then return end

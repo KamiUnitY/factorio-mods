@@ -6,9 +6,7 @@ aai_util.enable_recipe("iron-stick")
 data.raw["assembling-machine"]["burner-assembling-machine"].crafting_categories = data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories
 
 util.technology_remove("basic-logistics")
-aai_util.tech_lock_recipes("burner-mechanics", {
-    "transport-belt",
-})
+util.technology_insert_recipe_after("burner-mechanics", "transport-belt", "motor")
 
 data.raw.technology["electricity"].prerequisites = {"automation-science-pack"}
 
@@ -47,11 +45,3 @@ data.raw.technology["automation"].order = "b"
 data.raw.technology["electric-lab"].order = "b"
 
 data.raw.technology["logistic-science-pack"].order = "b"
-
--- Intended to use for reordering only.
-aai_util.tech_lock_recipes("burner-mechanics", {
-    "burner-inserter",
-    "burner-mining-drill",
-    "burner-assembling-machine",
-    "burner-lab",
-})
