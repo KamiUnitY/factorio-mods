@@ -4,5 +4,5 @@ table.insert(data.raw["technology"]["electronics"].effects, 1, {type = "unlock-r
 table.insert(data.raw["technology"]["electronics"].effects, 1, {type = "unlock-recipe", recipe = "circuit-board-stone-brick"})
 
 if mods["space-age"] then
-    table.insert(data.raw["technology"]["biochamber"].effects, {type = "unlock-recipe", recipe = "stone-brick-bio"})
+    util.technology_insert_recipe_after("biochamber", "stone-brick-bio", "burnt-spoilage")
 end
