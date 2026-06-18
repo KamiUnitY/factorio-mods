@@ -16,7 +16,7 @@ The assets listed below are excluded from MIT License and distributed under diff
 The following files are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0):
 
 - "graphics\technology\ore-crushing.png", By malcolmriley, Modified with AI by KamiUnitY
-- "graphics\technology\glass-processing.png", By malcolmriley, Background clean by KamiUnitY
+- "graphics\technology\glass-processing.png", By malcolmriley, Modified with AI by KamiUnitY
 
 See: "license-cc-by-4.0.txt"
 
