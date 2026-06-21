@@ -2,6 +2,7 @@ local util = require("libraries/utility")
 local aai_util = require("__aai-industry__/data-util")
 
 aai_util.enable_recipe("iron-stick")
+aai_util.enable_recipe("copper-cable")
 
 data.raw["assembling-machine"]["burner-assembling-machine"].crafting_categories = data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories
 

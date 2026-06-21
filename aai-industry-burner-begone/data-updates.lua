@@ -1,8 +1,6 @@
 local util = require("libraries/utility")
 local aai_util = require("__aai-industry__/data-util")
 
-aai_util.enable_recipe("copper-cable")
-
 util.recipe_remove("burner-lab")
 util.recipe_remove("burner-assembling-machine")
 
