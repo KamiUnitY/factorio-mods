@@ -15,6 +15,27 @@ data:extend({
 data:extend({
   {
     type = "recipe",
+    name = "circuit-board-wood",
+    enabled = false,
+    icon = nil,
+    icons = util.sub_icons(data.raw.item["circuit-board"], data.raw.item["wood"]),
+    allow_productivity = true,
+    auto_recycle = false,
+    hide_from_signal_gui = false,
+    order = data.raw.item["circuit-board"].order .. "-a",
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "wood", amount = 1},
+    },
+    results = {
+      {type = "item", name = "circuit-board", amount = 9}
+    }
+  }
+})
+
+data:extend({
+  {
+    type = "recipe",
     name = "circuit-board-stone-brick",
     enabled = false,
     icon = nil,
@@ -22,7 +43,7 @@ data:extend({
     allow_productivity = true,
     auto_recycle = false,
     hide_from_signal_gui = false,
-    order = data.raw.item["circuit-board"].order .. "-a",
+    order = data.raw.item["circuit-board"].order .. "-b",
     energy_required = 0.5,
     ingredients = {
       {type = "item", name = "stone-brick", amount = 1},
@@ -36,51 +57,23 @@ data:extend({
 data:extend({
   {
     type = "recipe",
-    name = "circuit-board-wood",
+    name = "circuit-board-plastic-bar",
     enabled = false,
     icon = nil,
-    icons = util.sub_icons(data.raw.item["circuit-board"], data.raw.item["wood"]),
+    icons = util.sub_icons(data.raw.item["circuit-board"], data.raw.item["plastic-bar"]),
     allow_productivity = true,
     auto_recycle = false,
     hide_from_signal_gui = false,
-    allow_as_intermediate = false,
-    order = data.raw.item["circuit-board"].order .. "-b",
+    order = data.raw.item["circuit-board"].order .. "-c",
     energy_required = 0.5,
     ingredients = {
-      {type = "item", name = "wood", amount = 1},
+      {type = "item", name = "plastic-bar", amount = 3},
     },
     results = {
-      {type = "item", name = "circuit-board", amount = 2}
+      {type = "item", name = "circuit-board", amount = 6}
     }
   }
 })
-
-if mods["space-age"] then
-  data:extend({
-    {
-      type = "recipe",
-      name = "stone-brick-bio",
-      enabled = false,
-      icon = "__kamy-circuit-board__/graphics/icons/stone-brick-bio.png",
-      icons = nil,
-      allow_productivity = true,
-      auto_recycle = false,
-      hide_from_signal_gui = false,
-      allow_as_intermediate = false,
-      subgroup = "agriculture-products",
-      order = data.raw.recipe["burnt-spoilage"].order .. "-a[stone-brick]",
-      category = "organic",
-      energy_required = 3,
-      ingredients = {
-        {type = "item", name = "carbon", amount = 1},
-        {type = "item", name = "spoilage", amount = 3},
-      },
-      results = {
-        {type = "item", name = "stone-brick", amount = 1}
-      }
-    }
-  })
-end
 
 data.raw["recipe"]["electronic-circuit"].ingredients = {
     {type = "item", name = "circuit-board", amount = 1},

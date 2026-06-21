@@ -8,7 +8,6 @@
   "description": "Simple mod that adds a basic circuit board intermediate to crafting electronic circuits.",
 	"dependencies": [
 		"base >= 2.0.0",
-		"? space-age",
 		"? aai-industry"
 	]
 }

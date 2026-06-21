@@ -1,8 +1,6 @@
 local util = require("libraries/utility")
 
-table.insert(data.raw["technology"]["electronics"].effects, 1, {type = "unlock-recipe", recipe = "circuit-board-wood"})
-table.insert(data.raw["technology"]["electronics"].effects, 1, {type = "unlock-recipe", recipe = "circuit-board-stone-brick"})
+util.technology_insert_recipe_after("electronics", "circuit-board-stone-brick", "electronic-circuit")
+util.technology_insert_recipe_after("electronics", "circuit-board-wood", "electronic-circuit")
 
-if mods["space-age"] then
-    util.technology_insert_recipe_after("biochamber", "stone-brick-bio", "burnt-spoilage")
-end
+util.technology_insert_recipe_after("advanced-circuit", "circuit-board-plastic-bar", "advanced-circuit")
