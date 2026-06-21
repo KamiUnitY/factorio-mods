@@ -70,13 +70,13 @@ if mods["space-age"] then
       subgroup = "agriculture-products",
       order = data.raw.recipe["burnt-spoilage"].order .. "-a[stone-brick]",
       category = "organic",
-      energy_required = 2,
+      energy_required = 3,
       ingredients = {
         {type = "item", name = "carbon", amount = 1},
         {type = "item", name = "spoilage", amount = 3},
       },
       results = {
-        {type = "item", name = "stone-brick", amount = 3}
+        {type = "item", name = "stone-brick", amount = 1}
       }
     }
   })
