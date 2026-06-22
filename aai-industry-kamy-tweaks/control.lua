@@ -1,7 +1,7 @@
 local FREEPLAY_ITEMS_SHIP = {
   ["burner-assembling-machine"] = 1,
-  ["burner-inserter"] = 2,
   ["burner-mining-drill"] = 3,
+  ["motor"] = 12,
 }
 local FREEPLAY_ITEMS_DEBRIS = {
   ["iron-plate"] = 24,
