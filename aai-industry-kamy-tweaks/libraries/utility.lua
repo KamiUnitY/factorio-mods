@@ -46,6 +46,13 @@ function util.technology_remove_ingredients(tech_name, ingredients_to_remove)
     end
 end
 
+function util.technology_insert_recipe_last(technology_name, recipe_name)
+	table.insert(data.raw.technology[technology_name].effects, {
+		type = "unlock-recipe",
+		recipe = recipe_name
+	})
+end
+
 function util.technology_insert_recipe_after(technology_name, recipe_name, after_recipe)
     local effects = data.raw.technology[technology_name].effects
 
