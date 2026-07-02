@@ -5,7 +5,10 @@ By using, modifying, or distributing this software, you agree to abide by the te
 
 1. MIT License
 
-Scripts contained within this software are licensed under the MIT License
+The following files and scripts contained within this software are licensed under the MIT License
+
+- "graphics\icons\stone-wall.png", By KamiUnitY
+- "graphics\entity\stone-wall", By KamiUnitY
 
 See: "license-mit.txt"
 
@@ -15,8 +18,8 @@ The assets listed below are excluded from MIT License and distributed under diff
 
 The following files are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0):
 
-- "graphics\technology\ore-crushing.png", By malcolmriley, Modified with AI by KamiUnitY
-- "graphics\technology\glass-processing.png", By malcolmriley, Modified with AI by KamiUnitY
+- "graphics\technology\ore-crushing.png", By malcolmriley, Modified by KamiUnitY
+- "graphics\technology\glass-processing.png", By malcolmriley, Modified by KamiUnitY
 
 See: "license-cc-by-4.0.txt"
 

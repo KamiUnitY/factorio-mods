@@ -1,4 +1,9 @@
 if mods["aai-industry"] then
+    local aai_util = require("__aai-industry__/data-util")
+
+    data.raw.item["stone-wall"].icon = "__kamy-reskins__/graphics/icons/stone-wall.png"
+    aai_util.replace_filenames_recursive(data.raw.wall["stone-wall"].pictures, "__aai-industry__", "__kamy-reskins__")
+
     data.raw.item["burner-assembling-machine"].icon = "__kamy-reskins__/graphics/icons/burner-assembling-machine.png"
     data.raw["assembling-machine"]["burner-assembling-machine"].icon = "__kamy-reskins__/graphics/icons/burner-assembling-machine.png"
 
