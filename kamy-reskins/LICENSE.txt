@@ -1,7 +1,8 @@
 LICENSE NOTICE
 
-This software and its accompanying assets are distributed under multiple license agreements.
-By using, modifying, or distributing this software, you agree to abide by the terms and conditions outlined below.
+This software contains files distributed under multiple licenses.
+Each file is licensed according to the terms listed below.
+By using, modifying, or distributing this software, you must comply with the license applicable to each file.
 
 1. MIT License
 
