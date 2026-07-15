@@ -4,7 +4,7 @@
 	"title": "Kamy's Reskins",
 	"author": "KamiUnitY",
 	"description": "Reskins graphics to my preferences.",
-	"factorio_version": "2.0",
+	"factorio_version": "2.1",
 	"dependencies": [
 		"base >= 2.0.0",
 		"? aai-industry",

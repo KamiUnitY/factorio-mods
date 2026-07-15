@@ -4,7 +4,7 @@
   "title": "Solar Matrix: But Fulgora",
   "author": "KamiUnitY",
   "thumbnail": "thumbnail.png",
-  "factorio_version": "2.0",
+  "factorio_version": "2.1",
   "description": "Locks Sacredanarchy's Solar Matrix behind Fulgora production chain.",
 	"dependencies": [
 		"base >= 2.0.0",

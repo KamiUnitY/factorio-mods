@@ -4,7 +4,7 @@
   "title": "Kamy's Circuit Board",
   "author": "KamiUnitY",
   "thumbnail": "thumbnail.png",
-  "factorio_version": "2.0",
+  "factorio_version": "2.1",
   "description": "Simple mod that adds a basic circuit board intermediate to crafting electronic circuits.",
 	"dependencies": [
 		"base >= 2.0.0",

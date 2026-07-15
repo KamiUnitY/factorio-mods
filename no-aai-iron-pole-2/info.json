@@ -4,7 +4,7 @@
 	"title": "AAI Industry: No Iron Pole",
 	"author": "KamiUnitY",
 	"description": "Removes the AAI iron electric pole from the game to encourage the use of the other poles instead. (Existing iron poles will become wooden)",
-	"factorio_version": "2.0",
+	"factorio_version": "2.1",
 	"dependencies": [
 		"base >= 2.0.0",
 		"aai-industry"
