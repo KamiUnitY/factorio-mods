@@ -51,6 +51,17 @@ function util.technology_insert_recipe_last(technology_name, recipe_name)
 		type = "unlock-recipe",
 		recipe = recipe_name
 	})
+    data.raw.recipe[recipe_name].enabled = false
+	data.raw.recipe[recipe_name].hidden = false
+end
+
+function util.technology_insert_recipe_first(technology_name, recipe_name)
+	table.insert(data.raw.technology[technology_name].effects, 1, {
+		type = "unlock-recipe",
+		recipe = recipe_name
+	})
+    data.raw.recipe[recipe_name].enabled = false
+	data.raw.recipe[recipe_name].hidden = false
 end
 
 function util.technology_insert_recipe_after(technology_name, recipe_name, after_recipe)
@@ -62,6 +73,8 @@ function util.technology_insert_recipe_after(technology_name, recipe_name, after
                 type = "unlock-recipe",
                 recipe = recipe_name
             })
+    		data.raw.recipe[recipe_name].enabled = false
+			data.raw.recipe[recipe_name].hidden = false
             return true
         end
     end
@@ -78,6 +91,7 @@ function util.technology_insert_recipe_before(technology_name, recipe_name, befo
                 type = "unlock-recipe",
                 recipe = recipe_name
             })
+    		data.raw.recipe[recipe_name].enabled = false
 			data.raw.recipe[recipe_name].hidden = false
             return true
         end
@@ -86,7 +100,22 @@ function util.technology_insert_recipe_before(technology_name, recipe_name, befo
     return false
 end
 
-function util.technology_remove_recipe_effect(recipe_name)
+function util.technology_remove_recipe_effect(technology_name, recipe_name)
+	local recipe = data.raw.recipe[recipe_name]
+	if not recipe then return end
+
+	local effects = data.raw.technology[technology_name].effects
+	if effects and #effects > 0 then
+		for i = #effects, 1, -1 do
+			local effect = effects[i]
+			if effect.type == "unlock-recipe" and effect.recipe == recipe_name then
+				util.table.remove(effects, i)
+			end
+		end
+	end
+end
+
+function util.technology_remove_recipe_effect_from_all(recipe_name)
 	local recipe = data.raw.recipe[recipe_name]
 	if not recipe then return end
 
@@ -101,8 +130,6 @@ function util.technology_remove_recipe_effect(recipe_name)
 			end
 		end
 	end
-
-    data.raw.recipe[recipe_name].enabled = false
 end
 
 function util.recipe_remove(recipe_name)
