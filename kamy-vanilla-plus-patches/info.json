@@ -1,0 +1,14 @@
+{
+	"name": "kamy-vanilla-plus-patches",
+	"version": "1.0.0",
+	"title": "Kamy's Vanilla+ Patches",
+	"author": "KamiUnitY",
+	"description": "My personal preferred small changes to vanilla+ mods.",
+	"factorio_version": "2.1",
+	"dependencies": [
+		"base >= 2.0.0",
+		"? aai-industry",
+		"(?) aai-industry-kamy-tweaks",
+		"? crushing-industry"
+	]
+}
