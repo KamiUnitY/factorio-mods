@@ -1,3 +1,41 @@
+if mods["quality_glassware"] then
+    local science_pack_icons = {
+        ["automation-science-pack"] = "cone_normal_clear_red",
+        ["logistic-science-pack"] = "triangle_clear_green",
+        ["military-science-pack"] = "sphere_spiked_clear_black",
+        ["chemical-science-pack"] = "cube_clear_cyan",
+        ["production-science-pack"] = "pentagon_clear_purple",
+        ["utility-science-pack"] = "hexagon_clear_yellow",
+        ["space-science-pack"] = "sphere_hemi_clear_white",
+        ["metallurgic-science-pack"] = "cone_slim_clear_orange",
+        ["agricultural-science-pack"] = "sphere_double_clear_lime",
+        ["electromagnetic-science-pack"] = "cone_inverted_clear_pink",
+        ["cryogenic-science-pack"] = "sphere_tiny_clear_blue",
+    }
+
+    for name, icon in pairs(science_pack_icons) do
+        if data.raw.item[name] then
+            data.raw.item[name].icon = "__quality_glassware__/graphics/icons/" .. icon .. ".png"
+        end
+        if data.raw.recipe[name] then
+            data.raw.recipe[name].icon = "__quality_glassware__/graphics/icons/" .. icon .. ".png"
+        end
+        if data.raw.technology[name] then
+            data.raw.technology[name].icon = "__quality_glassware__/graphics/technology/" .. icon .. ".png"
+        end
+    end
+
+    if data.raw.item["promethium-science-pack"] then
+        data.raw.item["promethium-science-pack"].icon = "__kamy-reskins__/graphics/icons/promethium-science-pack.png"
+    end
+    if data.raw.recipe["promethium-science-pack"] then
+        data.raw.recipe["promethium-science-pack"].icon = "__kamy-reskins__/graphics/icons/promethium-science-pack.png"
+    end
+    if data.raw.technology["promethium-science-pack"] then
+        data.raw.technology["promethium-science-pack"].icon = "__kamy-reskins__/graphics/technology/promethium-science-pack.png"
+    end
+end
+
 if mods["aai-industry"] then
     local aai_util = require("__aai-industry__/data-util")
 
@@ -14,7 +52,7 @@ end
 
 if mods["crushing-industry"] then
     if settings.startup["crushing-industry-ore"].value then
-    data.raw.technology["ore-crushing"].icon = "__kamy-reskins__/graphics/technology/ore-crushing.png"
+        data.raw.technology["ore-crushing"].icon = "__kamy-reskins__/graphics/technology/ore-crushing.png"
     end
 
     data.raw.item["burner-crusher"].icon = "__kamy-reskins__/graphics/icons/burner-crusher.png"

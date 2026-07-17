@@ -10,7 +10,8 @@ The following files and scripts contained within this software are licensed unde
 
 - "graphics\icons\stone-wall.png", By KamiUnitY
 - "graphics\entity\stone-wall", By KamiUnitY
-
+- "graphics\icons\promethium-science-pack", By Hornwitser, Modified by KamiUnitY
+- "graphics\technology\promethium-science-pack", By Hornwitser, Modified by KamiUnitY
 See: "license-mit.txt"
 
 The assets listed below are excluded from MIT License and distributed under different license terms.
