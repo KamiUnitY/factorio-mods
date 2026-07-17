@@ -1,18 +1,18 @@
-data.raw.recipe["small-iron-electric-pole"].enabled = false
-data.raw.recipe["small-iron-electric-pole"].hidden = true
-data.raw.item["small-iron-electric-pole"].subgroup = nil
-data.raw.item["small-iron-electric-pole"].order = nil
+local function prototype_remove(name)
+    for _, recipe in pairs(data.raw.recipe) do
+        if recipe.ingredients then
+            for i = #recipe.ingredients, 1, -1 do
+                local ingredient = recipe.ingredients[i]
+                if (ingredient.name or ingredient[1]) == name then
+                    table.remove(recipe.ingredients, i)
+                end
+            end
+        end
+    end
 
-for i, ingredient in ipairs(data.raw.recipe["medium-electric-pole"].ingredients) do
-    if ingredient.name == "small-iron-electric-pole" then
-        table.remove(data.raw.recipe["medium-electric-pole"].ingredients, i)
-        break
+    for _, prototypes in pairs(data.raw) do
+        prototypes[name] = nil
     end
 end
 
-for i, effect in ipairs(data.raw["technology"]["electricity"].effects) do
-	if effect.recipe == "small-iron-electric-pole" then
-		table.remove(data.raw["technology"]["electricity"].effects, i)
-		break
-	end
-end
+prototype_remove("small-iron-electric-pole")
