@@ -13,7 +13,9 @@ if mods["aai-industry"] then
 end
 
 if mods["crushing-industry"] then
+    if settings.startup["crushing-industry-ore"].value then
     data.raw.technology["ore-crushing"].icon = "__kamy-reskins__/graphics/technology/ore-crushing.png"
+    end
 
     data.raw.item["burner-crusher"].icon = "__kamy-reskins__/graphics/icons/burner-crusher.png"
     data.raw.item["electric-crusher"].icon = "__kamy-reskins__/graphics/icons/electric-crusher.png"
