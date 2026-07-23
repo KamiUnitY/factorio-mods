@@ -9,6 +9,7 @@
 		"base >= 2.0.0",
 		"? aai-industry",
 		"? crushing-industry",
-		"? enriching-industry"
+		"? enriching-industry",
+		"? invincible-construction-bots"
 	]
 }
