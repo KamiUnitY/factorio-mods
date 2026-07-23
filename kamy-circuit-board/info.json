@@ -7,7 +7,7 @@
   "factorio_version": "2.1",
   "description": "Simple mod that adds a basic circuit board intermediate to crafting electronic circuits.",
 	"dependencies": [
-		"base >= 2.0.0",
+		"base >= 2.1.0",
 		"? aai-industry"
 	]
 }

@@ -6,7 +6,7 @@
 	"description": "Some tweaks for AAI Industry.",
 	"factorio_version": "2.1",
 	"dependencies": [
-		"base >= 2.0.0",
+		"base >= 2.1.0",
 		"aai-industry",
 		"(?) crushing-industry",
 		"(?) FluidMustFlow",

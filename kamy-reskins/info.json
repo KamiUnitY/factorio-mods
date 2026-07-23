@@ -6,7 +6,7 @@
 	"description": "Reskins graphics to my preferences.",
 	"factorio_version": "2.1",
 	"dependencies": [
-		"base >= 2.0.0",
+		"base >= 2.1.0",
 		"? space-age",
 		"? quality_glassware",
 		"? aai-industry",
