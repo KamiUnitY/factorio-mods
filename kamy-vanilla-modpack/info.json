@@ -1,0 +1,33 @@
+{
+	"name": "kamy-vanilla-modpack",
+	"version": "1.0.0",
+	"title": "Kamy's Vanilla+ Modpack",
+	"author": "KamiUnitY",
+	"description": "A collection of my preferred vanilla+ mods.",
+	"factorio_version": "2.1",
+	"dependencies": [
+		"base >= 2.1.0",
+		"+ space-age",
+		"+ aai-industry",
+		"+ aai-industry-kamy-tweaks",
+		"+ aai-vehicles-ironclad",
+		"+ blueprint-sandboxes",
+		"+ bullet-trails",
+		"+ crushing-industry",
+		"+ CursorEnhancements",
+		"+ enriching-industry",
+		"+ factoryplanner",
+		"+ FluidMustFlow",
+		"+ FluidMustFlowThruTungsten",
+		"+ FluidWagonColorMask",
+		"+ ghost-counter",
+		"+ invincible-construction-bots",
+		"+ kamy-circuit-board",
+		"+ kamy-reskins",
+		"+ no-aai-iron-pole-2",
+		"+ quality_glassware",
+		"+ RateCalculator",
+		"+ remove-mod-buttons",
+		"+ solar-matrix-but-fulgora"
+	]
+}
