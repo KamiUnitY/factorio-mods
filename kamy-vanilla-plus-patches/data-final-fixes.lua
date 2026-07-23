@@ -1,5 +1,20 @@
 local util = require("libraries/utility")
 
+if mods["aai-industry"] then
+    data:extend({
+        {
+            type = "item-subgroup",
+            name = "lab",
+            group = "production",
+            order = "e-m"
+        }
+    })
+
+    data.raw.item["burner-lab"].subgroup = "lab"
+    data.raw.item["lab"].subgroup = "lab"
+    data.raw.item["biolab"].subgroup = "lab"
+end
+
 if mods["crushing-industry"] then
     util.technology_remove_recipe_effect("concrete", "crushed-iron-ore")
     if settings.startup["crushing-industry-concrete-mix"].value and settings.startup["crushing-industry-ore"].value then
