@@ -48,3 +48,16 @@ data.raw.technology["automation"].order = "b"
 data.raw.technology["electric-lab"].order = "b"
 
 data.raw.technology["logistic-science-pack"].order = "b"
+
+if mods["crushing-industry"] then
+    util.technology_remove_recipe_effect_from_all("burner-crusher")
+    util.technology_insert_recipe_last("sand-processing", "burner-crusher")
+
+    util.technology_remove_recipe_effect_from_all("electric-crusher")
+    if settings.startup["crushing-industry-ore"].value then
+        data.raw.technology["ore-crushing"].prerequisites = {"advanced-material-processing"}
+        util.technology_insert_recipe_last("ore-crushing", "electric-crusher")
+    else
+        util.technology_insert_recipe_last("advanced-material-processing", "electric-crusher")
+    end
+end

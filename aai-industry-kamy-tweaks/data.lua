@@ -34,4 +34,18 @@ if settings.startup["aai-kamy-no-burner-upgrades"].value then
         table.insert(electric_furnace_ingredients, {type = "item", name = "se-heat-shielding", amount = 1})
     end
     data.raw.recipe["electric-furnace"].ingredients = electric_furnace_ingredients
+
+    if mods["crushing-industry"] then
+        util.recipe_clear_ingredients("electric-crusher", {
+            {type = "item", name = "burner-crusher"},
+        })
+        util.recipe_set_ingredient_amount("electric-crusher", {
+            {type = "item", name = "stone-brick", amount = 5},
+        })
+    end
+end
+
+if mods["FluidMustFlow"] then
+    util.recipe_replace_ingredient("duct-intake", "engine-unit", "electric-engine-unit")
+    util.recipe_replace_ingredient("duct-exhaust", "engine-unit", "electric-engine-unit")
 end
