@@ -7,7 +7,7 @@
 	"factorio_version": "2.1",
 	"dependencies": [
 		"base >= 2.1.0",
-		"+ space-age",
+		"space-age",
 		"+ aai-industry",
 		"+ aai-industry-kamy-tweaks",
 		"+ aai-vehicles-ironclad",
