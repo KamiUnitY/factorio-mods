@@ -36,11 +36,4 @@ if mods["FluidMustFlowThruTungsten"] then
     util.recipe_set_ingredient_amount("duct-cross", {
         {type = "item", name = "tungsten-carbide", amount = 4}
     })
-
-    util.recipe_clear_ingredients("non-return-duct", {
-        {type = "item", name = "tungsten-plate"},
-    })
-    util.recipe_set_ingredient_amount("non-return-duct", {
-        {type = "item", name = "tungsten-carbide", amount = 4}
-    })
 end
