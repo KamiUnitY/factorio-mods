@@ -17,7 +17,6 @@ end
 
 if mods["crushing-industry"] then
     data.raw.recipe["sand"].categories = {"basic-crushing"}
-    util.recipe_remove("crushed-grenade")
 
     util.technology_remove_recipe_effect("concrete", "crushed-iron-ore")
     if settings.startup["crushing-industry-concrete-mix"].value and settings.startup["crushing-industry-ore"].value then
