@@ -27,6 +27,3 @@ data.raw["accumulator"]["accumulator-v2"].energy_source =
 local solar_matrix_production = tostring(settings.startup["solar-matrix-but-fulgora-solar-output"].value) .. "kW"
 
 data.raw["solar-panel"]["solar-matrix"].production = solar_matrix_production
-
-data.raw.corpse["accumulatorv2-remnants"].hidden = true
-data.raw.corpse["solar-matrix-remnants"].hidden = true
