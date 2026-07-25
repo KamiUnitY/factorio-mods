@@ -8,6 +8,9 @@
 	"dependencies": [
 		"base >= 2.1.0",
 		"aai-industry",
+		"+ no-aai-iron-pole-2",
+		"+ kamy-circuit-board",
+		"+ kamy-reskins",
 		"(?) crushing-industry",
 		"(?) FluidMustFlow",
 		"(?) Krastorio2",
