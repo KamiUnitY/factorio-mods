@@ -8,15 +8,21 @@
 	"dependencies": [
 		"base >= 2.1.0",
 		"space-age",
+		"+ elevated-rails",
+		"+ quality",
+		"+ recycler",
 		"+ aai-industry",
 		"+ aai-industry-kamy-tweaks",
 		"+ aai-vehicles-ironclad",
+		"+ Accumulator-V2",
 		"+ blueprint-sandboxes",
 		"+ bullet-trails",
 		"+ crushing-industry",
 		"+ CursorEnhancements",
 		"+ enriching-industry",
 		"+ factoryplanner",
+		"+ fdsl",
+		"+ flib",
 		"+ FluidMustFlow",
 		"+ FluidMustFlowThruTungsten",
 		"+ FluidWagonColorMask",
@@ -28,6 +34,7 @@
 		"+ quality_glassware",
 		"+ RateCalculator",
 		"+ remove-mod-buttons",
-		"+ solar-matrix-but-fulgora"
+		"+ solar-matrix-but-fulgora",
+		"+ SolarMatrix"
 	]
 }
