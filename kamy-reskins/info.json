@@ -8,7 +8,7 @@
 	"dependencies": [
 		"base >= 2.1.0",
 		"? space-age",
-		"? quality_glassware",
+		"+ quality_glassware",
 		"? aai-industry",
 		"? crushing-industry",
 		"? crushing-industry-productivity-research"
