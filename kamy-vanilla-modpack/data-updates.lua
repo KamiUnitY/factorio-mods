@@ -27,6 +27,15 @@ if mods["crushing-industry"] then
     util.technology_insert_recipe_last("tungsten-steel", "big-crusher")
 end
 
+if mods["aai-industry"] and mods["crushing-industry"] then
+    if settings.startup["crushing-industry-coal"].value then
+        util.technology_remove_recipe_effect_from_all("crushed-coal")
+        util.technology_insert_recipe_after("sand-processing", "crushed-coal", "sand")
+
+        table.insert(data.raw.technology["military-2"].prerequisites, "sand-processing")
+    end
+end
+
 if mods["enriching-industry"] then
     data:extend({
         {

@@ -69,6 +69,10 @@ return function ()
         data.raw["assembling-machine"]["big-crusher"].graphics_set.animation.layers[2].filename = "__kamy-reskins__/graphics/entity/big-crusher/big-crusher-base.png"
     end
 
+    if mods["aai-industry"] and mods["crushing-industry"] then
+        data.raw.technology["sand-processing"].icon = "__kamy-reskins__/graphics/technology/basic-crushing.png"
+    end
+
     if mods["crushing-industry-productivity-research"] then
         local ore_crushing_productivity_icons = util.technology_icon_constant_recipe_productivity("__kamy-reskins__/graphics/technology/ore-crushing.png")
         data.raw.technology["ore-crushing-productivity-1"].icons = ore_crushing_productivity_icons

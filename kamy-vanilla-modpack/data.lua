@@ -1,5 +1,11 @@
 local util = require("libraries/utility")
 
+if mods["crushing-industry"] then
+    if settings.startup["crushing-industry-coal"].value then
+        util.recipe_replace_ingredient("grenade", "coal", "crushed-coal")
+    end
+end
+
 if mods["FluidMustFlowThruTungsten"] then
     util.recipe_clear_ingredients("duct-small", {
         {type = "item", name = "tungsten-plate"},
