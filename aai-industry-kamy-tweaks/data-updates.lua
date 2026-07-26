@@ -28,9 +28,14 @@ util.table.patch(data.raw.technology["electric-lab"].unit, {
     time = 15
 })
 
+util.table.patch(data.raw.technology["sand-processing"].unit, {
+    count = 20,
+    time = 15
+})
+
 util.table.patch(data.raw.technology["glass-processing"].unit, {
     count = 20,
-    time = 10
+    time = 5
 })
 
 if settings.startup["aai-kamy-early-steam-power"].value then
@@ -55,7 +60,7 @@ if mods["crushing-industry"] then
 
     util.technology_remove_recipe_effect_from_all("electric-crusher")
     if settings.startup["crushing-industry-ore"].value then
-        data.raw.technology["ore-crushing"].prerequisites = {"advanced-material-processing"}
+        data.raw.technology["ore-crushing"].prerequisites = {"advanced-material-processing", "electronics", "sand-processing"}
         util.technology_insert_recipe_last("ore-crushing", "electric-crusher")
     else
         util.technology_insert_recipe_last("advanced-material-processing", "electric-crusher")
