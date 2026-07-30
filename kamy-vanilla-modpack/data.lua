@@ -3,6 +3,11 @@ local util = require("libraries/utility")
 if mods["crushing-industry"] then
     if settings.startup["crushing-industry-coal"].value then
         util.recipe_replace_ingredient("grenade", "coal", "crushed-coal")
+        util.table.patch(data.raw.item["crushed-coal"], {
+            fuel_value = "2.0MJ",
+            stack_size = 200,
+            weight = 1 * kg
+        })
     end
 end
 
