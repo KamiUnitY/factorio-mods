@@ -6,6 +6,11 @@ if mods["crushing-industry"] then
     end
 end
 
+if mods["aai-vehicles-ironclad"] then
+    data.raw.ammo["mortar-bomb"].stack_size = 100
+    data.raw.ammo["mortar-cluster-bomb"].stack_size = 100
+end
+
 if mods["FluidMustFlowThruTungsten"] then
     util.recipe_clear_ingredients("duct-small", {
         {type = "item", name = "tungsten-plate"},
