@@ -4,6 +4,7 @@ if mods["aai-industry"] then
 end
 
 if mods["crushing-industry"] then
+    data.raw["bool-setting"]["crushing-industry-space-crusher-quality"].default_value = false
     data.raw["bool-setting"]["crushing-industry-optical-fiber"].default_value = false
     data.raw["bool-setting"]["crushing-industry-concrete-mix"].default_value = false
 end

@@ -9,6 +9,9 @@ if mods["crushing-industry"] then
             weight = 1 * kg
         })
     end
+    if settings.startup["crushing-industry-space-crusher"].value and not settings.startup["crushing-industry-space-crusher-quality"].value then
+        data.raw["assembling-machine"]["crusher"].effect_receiver = {base_effect={productivity=0.5}}
+    end
 end
 
 if mods["aai-vehicles-ironclad"] then
