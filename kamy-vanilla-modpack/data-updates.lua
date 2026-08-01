@@ -24,7 +24,7 @@ if mods["crushing-industry"] then
     end
 
     util.technology_remove_recipe_effect_from_all("big-crusher")
-    util.technology_insert_recipe_last("tungsten-steel", "big-crusher")
+    util.technology_insert_recipe_last("big-mining-drill", "big-crusher")
 end
 
 if mods["aai-industry"] and mods["crushing-industry"] then
