@@ -1,4 +1,9 @@
 return function ()
+    data.raw.item["electronic-circuit"].icon = "__kamy-reskins__/graphics/icons/electronic-circuit.png"
+    data.raw.item["advanced-circuit"].icon = "__kamy-reskins__/graphics/icons/advanced-circuit.png"
+    data.raw.technology["electronics"].icon = "__kamy-reskins__/graphics/technology/electronics.png"
+    data.raw.technology["advanced-circuit"].icon = "__kamy-reskins__/graphics/technology/advanced-circuit.png"
+
     if mods["quality_glassware"] then
         local science_pack_icons = {
             ["automation-science-pack"] = "cone_normal_clear_red",

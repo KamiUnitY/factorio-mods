@@ -29,6 +29,8 @@ See: "license-cc-by-4.0.txt"
 
 The following files are licensed under the GNU Lesser General Public License version 3 (GNU LGPLv3):
 
+- "graphics\icons\electronic-circuit.png", By raiguard
+- "graphics\icons\advanced-circuit.png", By raiguard
 - "graphics\icons\burner-crusher.png", By SafTheLamb, Modified by KamiUnitY
 - "graphics\icons\electric-crusher.png", By SafTheLamb, Modified by KamiUnitY
 - "graphics\icons\big-crusher.png", By SafTheLamb, Modified by KamiUnitY
@@ -42,6 +44,8 @@ See: "license-gnu-lgpl-3.0.txt"
 
 The following files are licensed under the Factorio End User License Agreement:
 
+- "graphics\technology\electronics.png", By Wube Software, Modified by KamiUnitY
+- "graphics\technology\advanced-circuit.png", By Wube Software, Modified by KamiUnitY
 - "graphics\technology\basic-fluid-handling.png", By Wube Software, Modified by KamiUnitY
 - "graphics\icons\burner-assembling-machine.png", By Wube Software, Modified by KamiUnitY
 
