@@ -23,12 +23,12 @@ data:extend({
     auto_recycle = false,
     hide_from_signal_gui = false,
     order = data.raw.item["circuit-board"].order .. "-a",
-    energy_required = 1.5,
+    energy_required = 2.0,
     ingredients = {
       {type = "item", name = "wood", amount = 1},
     },
     results = {
-      {type = "item", name = "circuit-board", amount = 9}
+      {type = "item", name = "circuit-board", amount = 6}
     }
   }
 })
@@ -67,18 +67,29 @@ data:extend({
     order = data.raw.item["circuit-board"].order .. "-c",
     energy_required = 0.5,
     ingredients = {
-      {type = "item", name = "plastic-bar", amount = 3},
+      {type = "item", name = "plastic-bar", amount = 4},
     },
     results = {
-      {type = "item", name = "circuit-board", amount = 6}
+      {type = "item", name = "circuit-board", amount = 8}
     }
   }
 })
 
 data.raw["recipe"]["electronic-circuit"].ingredients = {
     {type = "item", name = "circuit-board", amount = 1},
-    {type = "item", name = "copper-cable", amount = 3}
+    {type = "item", name = "copper-cable", amount = 3},
 }
+
+data.raw["recipe"]["advanced-circuit"].ingredients = {
+    {type = "item", name = "plastic-bar", amount = 2},
+    {type = "item", name = "iron-plate", amount = 2},
+    {type = "item", name = "electronic-circuit", amount = 4},
+}
+
+util.recipe_set_ingredient_amount("processing-unit", {
+    {type = "item", name = "electronic-circuit", amount = 10},
+    {type = "item", name = "advanced-circuit", amount = 5},
+})
 
 if mods["aai-industry"] then
     data.raw["recipe"]["electronic-circuit-wood"] = nil
