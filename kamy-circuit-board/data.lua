@@ -87,8 +87,8 @@ data.raw["recipe"]["advanced-circuit"].ingredients = {
 }
 
 util.recipe_set_ingredient_amount("processing-unit", {
-    {type = "item", name = "electronic-circuit", amount = 10},
-    {type = "item", name = "advanced-circuit", amount = 5},
+    {type = "item", name = "electronic-circuit", amount = 20},
+    {type = "item", name = "advanced-circuit", amount = 4},
 })
 
 if mods["aai-industry"] then
