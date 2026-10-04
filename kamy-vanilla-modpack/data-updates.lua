@@ -46,7 +46,6 @@ if mods["enriching-industry"] then
         }
     })
 
-    data.raw.recipe["ei-quartz"].subgroup = "raw-resource-enriching"
     data.raw.recipe["ei-enriched-iron-ore"].subgroup = "raw-resource-enriching"
     data.raw.recipe["ei-sulfuric-iron-leaching"].subgroup = "raw-resource-enriching"
     data.raw.recipe["ei-enriched-iron-ore-recrystallization"].subgroup = "raw-resource-enriching"
@@ -56,7 +55,6 @@ if mods["enriching-industry"] then
     data.raw.recipe["ei-tailing-slurry-filtering"].subgroup = "raw-resource-enriching"
     data.raw.recipe["ei-tailing-slurry-reprocessing"].subgroup = "raw-resource-enriching"
 
-    data.raw.recipe["ei-quartz-smelting"].order = "a[smelting]-d[glass]-a[quartz]"
     data.raw.recipe["ei-tailing-slurry-reprocessing"].order = "f[tailing-slurry-reprocessing]"
     data.raw.recipe["ei-tailing-slurry-filtering"].order = "f[tailing-slurry-filtering]"
 end
